@@ -1,6 +1,6 @@
 package edu.patterns.creational.builder;
 
-public record ExampleEntity(
+public record ExampleEntityBuilder(
         long id,
         String entityName,
         String entityAddress,
@@ -39,8 +39,8 @@ public record ExampleEntity(
             return this;
         }
 
-        public ExampleEntity build() {
-            return new ExampleEntity(id, entityName, entityAddress, postalCode, website);
+        public ExampleEntityBuilder build() {
+            return new ExampleEntityBuilder(id, entityName, entityAddress, postalCode, website);
         }
     }
 }
