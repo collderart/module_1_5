@@ -1,10 +1,14 @@
 package edu.patterns.creational.observer;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class WebNotification implements NotificationElement, Observer {
 
     Map<String, Set<String>> videos = new HashMap<>();
+
     public WebNotification(Subject subject) {
         subject.registerObserver(this);
     }

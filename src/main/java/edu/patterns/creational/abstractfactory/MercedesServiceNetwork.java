@@ -1,6 +1,6 @@
 package edu.patterns.creational.abstractfactory;
 
-public class MercedesServiceNetwork implements AutoServiceNetworkFactory{
+public class MercedesServiceNetwork implements AutoServiceNetworkFactory {
     @Override
     public ServiceBox createServiceBox() {
         return new MercedesServiceBox();

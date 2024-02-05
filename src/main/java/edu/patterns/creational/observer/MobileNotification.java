@@ -5,8 +5,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class MobileNotification implements NotificationElement, Observer{
+public class MobileNotification implements NotificationElement, Observer {
     Map<String, Set<String>> videos = new HashMap<>();
+
     public MobileNotification(Subject subject) {
         subject.registerObserver(this);
     }
@@ -26,7 +27,8 @@ public class MobileNotification implements NotificationElement, Observer{
         System.out.println("Updated videos in " + getObserverName() + " notification: \n" + videos);
         System.out.println();
         System.out.println();
-        pushNotification();    }
+        pushNotification();
+    }
 
     @Override
     public String getObserverName() {

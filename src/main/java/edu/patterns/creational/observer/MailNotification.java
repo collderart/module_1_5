@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class MailNotification implements NotificationElement, Observer {
     Map<String, Set<String>> videos = new HashMap<>();
+
     public MailNotification(Subject subject) {
         subject.registerObserver(this);
     }
@@ -26,7 +27,8 @@ public class MailNotification implements NotificationElement, Observer {
         System.out.println("Updated videos in " + getObserverName() + " notification: \n" + videos);
         System.out.println();
         System.out.println();
-        pushNotification();    }
+        pushNotification();
+    }
 
     @Override
     public String getObserverName() {

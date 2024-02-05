@@ -21,7 +21,7 @@ public class YouTubePlatform implements Subject {
             videos.add(videoTitle);
             return videos;
         });
-        System.out.println( "on channel: " + channelName + " Added video: " + videoTitle );
+        System.out.println("on channel: " + channelName + " Added video: " + videoTitle);
         stateChanged();
     }
 

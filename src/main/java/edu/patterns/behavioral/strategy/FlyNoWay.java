@@ -1,6 +1,6 @@
 package edu.patterns.behavioral.strategy;
 
-public class FlyNoWay implements FlyBehavior{
+public class FlyNoWay implements FlyBehavior {
 
     @Override
     public void fly() {

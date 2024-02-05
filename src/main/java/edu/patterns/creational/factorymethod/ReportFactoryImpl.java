@@ -20,5 +20,6 @@ public class ReportFactoryImpl implements ReportFactory {
             case CLIENT -> {
             }
         }
-    return null;}
+        return null;
+    }
 }

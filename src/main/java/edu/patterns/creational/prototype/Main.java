@@ -1,7 +1,5 @@
 package edu.patterns.creational.prototype;
 
-import edu.patterns.creational.singleton.SingletonEntity;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("prototype example");

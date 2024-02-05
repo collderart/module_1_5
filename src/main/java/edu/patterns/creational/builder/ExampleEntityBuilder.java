@@ -8,11 +8,11 @@ public record ExampleEntityBuilder(
         String website
 ) {
     public static class Builder {
-       private long id = 0;
-       private String entityName = "default name";
-       private String entityAddress = "default address";
-       private long postalCode = 0;
-       private String website = "default website";
+        private long id = 0;
+        private String entityName = "default name";
+        private String entityAddress = "default address";
+        private long postalCode = 0;
+        private String website = "default website";
 
         public Builder withId(long id) {
             this.id = id;
