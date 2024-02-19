@@ -1,15 +1,14 @@
-package edu.patterns.creational.observer;
+package edu.patterns.behavioral.observer;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class WebNotification implements NotificationElement, Observer {
-
+public class MobileNotification implements NotificationElement, Observer {
     Map<String, Set<String>> videos = new HashMap<>();
 
-    public WebNotification(Subject subject) {
+    public MobileNotification(Subject subject) {
         subject.registerObserver(this);
     }
 
@@ -33,6 +32,6 @@ public class WebNotification implements NotificationElement, Observer {
 
     @Override
     public String getObserverName() {
-        return "Web";
+        return "Mobile";
     }
 }

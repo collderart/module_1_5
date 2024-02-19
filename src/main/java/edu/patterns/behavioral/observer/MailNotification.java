@@ -1,4 +1,4 @@
-package edu.patterns.creational.observer;
+package edu.patterns.behavioral.observer;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package edu.patterns.creational.observer;
+package edu.patterns.behavioral.observer;
 
 public interface Subject {
     void registerObserver(Observer observer);
